@@ -1,4 +1,7 @@
-# api documentation for  [mysql-promise (v4.1.0)](https://github.com/martinj/node-mysql-promise#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mysql-promise.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mysql-promise) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mysql-promise.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mysql-promise)
+# npmdoc-mysql-promise
+
+#### api documentation for  [mysql-promise (v4.1.0)](https://github.com/martinj/node-mysql-promise#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mysql-promise.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mysql-promise) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mysql-promise.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mysql-promise)
+
 #### Small wrapper for mysql that use promises.
 
 [![NPM](https://nodei.co/npm/mysql-promise.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mysql-promise)
