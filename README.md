@@ -1,6 +1,6 @@
 # npmdoc-mysql-promise
 
-#### api documentation for  [mysql-promise (v4.1.0)](https://github.com/martinj/node-mysql-promise#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mysql-promise.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mysql-promise) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mysql-promise.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mysql-promise)
+#### api documentation for  mysql-promise (v4.1.0)  [![npm package](https://img.shields.io/npm/v/npmdoc-mysql-promise.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mysql-promise) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mysql-promise.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mysql-promise)
 
 #### Small wrapper for mysql that use promises.
 
@@ -21,9 +21,30 @@
 ```json
 
 {
-    "author": {
-        "name": "Martin Jonsson"
+    "name": "mysql-promise",
+    "version": "4.1.0",
+    "description": "Small wrapper for mysql that use promises.",
+    "main": "index.js",
+    "scripts": {
+        "test": "NODE_ENV=test npm run lint && istanbul cover -i 'index.js' _mocha -- -u exports -R spec 'test/**/*.test.js'",
+        "lint": "eslint --ext '.js' test index.js",
+        "release": "npm test && release-it -n -i patch",
+        "release:minor": "npm test && release-it -n -i minor",
+        "release:major": "npm test && release-it -n -i major"
     },
+    "engines": {
+        "node": ">=0.12.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/martinj/node-mysql-promise"
+    },
+    "keywords": [
+        "mysql",
+        "promise"
+    ],
+    "author": "Martin Jonsson <martin.jonsson@gmail.com>",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/martinj/node-mysql-promise/issues"
     },
@@ -31,7 +52,6 @@
         "bluebird": "^3.4.6",
         "mysql": "^2.12.0"
     },
-    "description": "Small wrapper for mysql that use promises.",
     "devDependencies": {
         "@aptoma/eslint-config": "^5.0.1",
         "eslint": "^2.13.0",
@@ -42,46 +62,11 @@
         "should": "^11.1.1",
         "sinon": "^1.17.6"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "43e292c60c3a5c8e4f4d2f8bf3747a318d4aba6b",
-        "tarball": "https://registry.npmjs.org/mysql-promise/-/mysql-promise-4.1.0.tgz"
-    },
-    "engines": {
-        "node": ">=0.12.0"
-    },
-    "gitHead": "43891d75917edc8a51c153b59bf6fe8687438c10",
     "greenkeeper": {
         "ignore": [
             "eslint"
         ]
-    },
-    "homepage": "https://github.com/martinj/node-mysql-promise#readme",
-    "keywords": [
-        "mysql",
-        "promise"
-    ],
-    "license": "MIT",
-    "main": "index.js",
-    "maintainers": [
-        {
-            "name": "martinj"
-        }
-    ],
-    "name": "mysql-promise",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/martinj/node-mysql-promise.git"
-    },
-    "scripts": {
-        "lint": "eslint --ext '.js' test index.js",
-        "release": "npm test && release-it -n -i patch",
-        "release:major": "npm test && release-it -n -i major",
-        "release:minor": "npm test && release-it -n -i minor",
-        "test": "NODE_ENV=test npm run lint && istanbul cover -i 'index.js' _mocha -- -u exports -R spec 'test/**/*.test.js'"
-    },
-    "version": "4.1.0"
+    }
 }
 ```
 
